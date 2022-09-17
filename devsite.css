@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #202020;
+}
+
+
+div.box {
+    position: absolute;
+    top: 3.2cm;
+    left: 163px;
+    width: 910px;
+    height: 405px;
+    font-size: 40px;
+    text-align: center;
+    color: azure;
+    border: 1px solid gray;
+    border-width: 1,5px;
+    border-radius: 10px;
+    padding-bottom: 100px;
+    border-bottom-width: 15px;
+    box-sizing: border-box;
+}
+
+
+div.details {
+    position: absolute;
+    font-family:monospace;
+    top: 3.8cm;
+    left: 15.1cm;
+    width: 900px;
+    height: 600px;
+    font-size: 20px;
+    color: white;
+}
+#about {
+    position: absolute;
+    top: 0.9cm;
+}
+
+
+div#draw {
+    position: absolute;
+    top: 4.1cm;
+    left: 555px;
+    width: 10px;
+    height: 315px;
+    border: 2px rgba(211, 211, 211, 0.507);
+    background-color: rgba(211, 211, 211, 0.507);
+    margin: 0px;
+}
+
+img#görsel {
+    position: absolute;
+    padding: 2px;
+    background-color: white;
+    top: 3.6cm;
+    left: 190px;
+    width: 27%;
+    height: 41%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+dev#github {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 9cm;
+    left: 380px;
+}
+img.icon {
+    position: absolute;
+    size: 40px;
+    left: 20px;
+    top: -8.4cm;
+    width: 40px;
+    height: 40px;
+}
+img.icon:hover {
+    position: absolute;
+    width: 42px;
+    height: 42px;   
+}
+button {
+    position: absolute;
+    size: 0;
+}
