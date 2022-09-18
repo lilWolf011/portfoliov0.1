@@ -76,26 +76,31 @@ p.p2 {
 }
 
  /* For mobile phones: */
-@media screen and (max-width:576px) {
+@media screen and (max-width:431px) {
     .details {
-        left: 33.2%;
+        left: 28.5%;
+        font-size: 36px;
     }
     p.p1 {
-        left: 33.8%;
+
+        left: 31%;
+        font-size: 44px;
     }
     .details+.p2 {
-        left: 12%;
+        left: 7%;
+        font-size: 26px;
     }
     ul {
-        gap: 30px;
+        gap: 25px;
     }
     img.img1 {
-        width: 40%;
+        width: 50%;
         top: 3.8cm;
-        left: 29.7%;
+        left: 26%;
     }
     img.img {
-        width: 8.9%;
+        width: 11%;
+        left: 8px;
     }
     
 }
