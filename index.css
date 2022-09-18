@@ -44,14 +44,14 @@ img.img1 {
     background-color: black;
     width: 17%;
     right: 42.4%;
-    top: 4.3cm;
+    top: 4.1cm;
     border-radius: 50%;
     border-color: black;
     object-fit: cover;
 }
 p.p1 {
     position: fixed;
-    left: 13cm;
+    left: 14cm;
     font-size: 46px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     top: 8.6cm;
