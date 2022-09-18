@@ -1,3 +1,5 @@
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -6,14 +8,12 @@ body {
     background-color: white;
 }
 .navbar {
-    position:static;
+    position:fixed;
     background-color: #272829;
     width: 100%;
-    position: fixed;
     top: 0;
 }
 ul {
-    position:static;
     list-style-type: none;
     display: flex;
     justify-content: end;
@@ -21,7 +21,7 @@ ul {
     padding-right:40px;
 }
 a {
-    position:static;
+
     text-decoration: none;
     color: rgba(255, 255, 255, 0.767);
 }
@@ -31,7 +31,7 @@ a:hover {
 
 
 img.img {
-    position:absolute;
+    position:fixed;
     top: 0cm;
     width: 4%;
     left: 10px;
@@ -39,17 +39,19 @@ img.img {
     object-fit: cover;
 }
 img.img1 {
-    position:absolute;
+    position: fixed;
+    padding: 2px;
+    background-color: black;
     width: 17%;
     right: 42.4%;
-    top: 4cm;
+    top: 4.3cm;
     border-radius: 50%;
     border-color: black;
     object-fit: cover;
 }
 p.p1 {
     position: fixed;
-    left: 14.2cm;
+    left: 13cm;
     font-size: 46px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     top: 8.6cm;
