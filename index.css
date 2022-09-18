@@ -1,4 +1,6 @@
-
+* {
+    box-sizing: border-box;
+}
 
 html {
     scroll-behavior: smooth;
@@ -43,7 +45,7 @@ img.img1 {
     padding: 2px;
     background-color: black;
     width: 17%;
-    right: 42.6%;
+    right: 42.4%;
     top: 4.1cm;
     border-radius: 50%;
     border-color: black;
@@ -51,7 +53,7 @@ img.img1 {
 }
 p.p1 {
     position: fixed;
-    left: 14.1cm;
+    left: 14cm;
     font-size: 46px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     top: 8.6cm;
@@ -73,3 +75,27 @@ p.p2 {
     color: black;
 }
 
+ /* For mobile phones: */
+@media screen and (max-width:576px) {
+    .details {
+        left: 33.2%;
+    }
+    p.p1 {
+        left: 33.8%;
+    }
+    .details+.p2 {
+        left: 12%;
+    }
+    ul {
+        gap: 30px;
+    }
+    img.img1 {
+        width: 40%;
+        top: 3.8cm;
+        left: 29.7%;
+    }
+    img.img {
+        width: 8.9%;
+    }
+    
+}
