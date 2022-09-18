@@ -75,7 +75,58 @@ p.p2 {
     color: black;
 }
 
- /* For mobile phones: */
+@media only screen and (max-width:1920px) {
+    img.img {
+        width: 3.2%;
+        left: 20px;
+    }
+    img.img1 {
+        top: 3cm;
+    }
+    p.p1 {
+        left: 44%;
+        top: 10.8cm;
+    }
+    .details {
+        left: 43%;
+        top: 46%;
+    }
+    p.p2 {
+        left: 33.5%;
+        top: 13.6cm;
+        font-size: 28px;
+    }
+    .navbar {
+        height: 62px;
+    }
+    li {
+        font-size: 26px;
+    }
+    ul {
+        gap: 75px;
+    }
+}
+
+@media only screen and (max-width:1328px) {
+    .navbar {
+        height: 60px;
+    }
+    p.p1 {
+        left: 42.5%;
+    }
+    img.img1 {
+        top: 3.9cm;
+    }
+    img.img {
+        width: 4.5%;
+    }
+    ul {
+        top: 0cm;
+        font-size: 20px;
+    }
+}
+
+ /* İphone SE,12/13 Pro Max,Galaxy S20,S10: */
 @media screen and (max-width:431px) {
     .details {
         left: 28.5%;
@@ -87,7 +138,7 @@ p.p2 {
         font-size: 44px;
     }
     .details+.p2 {
-        left: 7%;
+        left: 5%;
         font-size: 26px;
     }
     ul {
@@ -96,6 +147,94 @@ p.p2 {
     img.img1 {
         width: 50%;
         top: 3.8cm;
+        left: 26%;
+    }
+    img.img {
+        width: 11%;
+        left: 8px;
+    }
+    
+}
+
+@media screen and (max-width:414px) {
+    .details {
+        left: 28.5%;
+        font-size: 36px;
+    }
+    p.p1 {
+
+        left: 31%;
+        font-size: 44px;
+    }
+    .details+.p2 {
+        left: 4.9%;
+        font-size: 26px;
+    }
+    ul {
+        gap: 18px;
+    }
+    img.img1 {
+        width: 50%;
+        top: 3.8cm;
+        left: 26%;
+    }
+    img.img {
+        width: 11%;
+        left: 8px;
+    }
+    
+}
+
+@media screen and (max-width:390px) {
+    .details {
+        left: 28.5%;
+        font-size: 36px;
+    }
+    p.p1 {
+
+        left: 31%;
+        font-size: 44px;
+    }
+    .details+.p2 {
+        left: 4.9%;
+        font-size: 24px;
+    }
+    ul {
+        gap: 15px;
+        padding-right:20px;
+    }
+    img.img1 {
+        width: 50%;
+        top: 4cm;
+        left: 26%;
+    }
+    img.img {
+        width: 11%;
+        left: 8px;
+    }
+    
+}
+
+@media screen and (max-width:360px) {
+    .details {
+        left: 26%;
+        font-size: 36px;
+    }
+    p.p1 {
+        left: 29%;
+        font-size: 44px;
+    }
+    .details+.p2 {
+        left: 4.9%;
+        font-size: 24px;
+    }
+    ul {
+        gap: 15px;
+        padding-right:10px;
+    }
+    img.img1 {
+        width: 50%;
+        top: 5cm;
         left: 26%;
     }
     img.img {
