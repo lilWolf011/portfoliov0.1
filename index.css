@@ -1,5 +1,6 @@
 body, html {
     margin: 0;
+    height: 100%;
     background: fixed no-repeat black center url(glitch.jpg);
 }
 * {
@@ -23,6 +24,7 @@ body, html {
 
 }
 .pp {
+    position:relative;
     display: block;
     margin: auto;
     margin-top: -11.4cm;
@@ -71,6 +73,7 @@ body, html {
 @media screen and (max-width:750px) {
     body, html {
         padding: 7px;
+        height: 100%;
     }
     .fronted {
         width: auto;   
@@ -90,4 +93,30 @@ body, html {
         width: 6%;
     }
 
+}
+
+@media screen and (min-width:1280px) {
+    body ,html {
+        padding: 0px;
+        height: auto;
+    }
+    .fronted {
+        top: -2cm;
+        width: 50%;   
+    }
+    .pp {
+        top: -2cm;
+    }
+    .detail .text {
+        top: -3cm;
+    }
+    .detail .text1 {
+        font-size: 20px;
+        top: -4.2cm;
+    }
+    .icons {
+        top: -4.5cm;
+        width: 3.2%;
+        left: 43%;
+    }
 }
