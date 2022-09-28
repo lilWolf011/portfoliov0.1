@@ -5,7 +5,7 @@ html, body {
 }
 .navbar {
     position:fixed;
-    background-color: #1d1e1f;
+    background-color: #272727;
     width: 100%;
     z-index: 99;
     top: 0;
