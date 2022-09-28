@@ -5,7 +5,7 @@ html, body {
 }
 .navbar {
     position:fixed;
-    background-color: #272829;
+    background-color: #1d1e1f;
     width: 100%;
     z-index: 99;
     top: 0;
@@ -59,7 +59,7 @@ a:hover {
     transition-duration: 0.3s;
 }
 .github:hover {
-    box-shadow: 0px 12px 15px 0px rgba(255, 255, 255, 0.384);
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.61);
 }
 .github-box {
     position: relative;
