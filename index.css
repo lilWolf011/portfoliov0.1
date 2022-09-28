@@ -1,122 +1,138 @@
-body, html {
-    margin: 0;
+html, body {
     height: 100%;
-    background: fixed no-repeat black center url(glitch.jpg);
+    scroll-behavior: smooth;
 }
-* {
-    box-sizing: border-box;
+.navbar {
+    position:fixed;
+    background-color: #272829;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    left: 0;
 }
-.fronted {
-    position: relative;
+ul {
     list-style-type: none;
-    margin: auto;
-    margin-top: 5cm;
-    padding: 0;
-    width: 600px;
-    height: 450px;
-    border: 0.5px ridge #00000000;
-    background-color: black;
-    opacity: 55%;
-    border-radius: 10px;
-    display: block;
-    box-sizing: border-box;
-    box-shadow: 0px 18px 50px 30px black;
-
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.767);
+}
+a:hover {
+    color: rgb(255, 255, 255);
 }
 .pp {
-    position:relative;
-    display: block;
-    margin: auto;
-    margin-top: -11.4cm;
-    filter: opacity(100%);
-    padding: 1px;
-    background-color: #e5e7eb;
-    width: 14%;
     border-radius: 50%;
     object-fit: cover;
-}
-.detail .text {
-    position: relative;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 42px;
     display: block;
-    color: #fafafa;
+    position: inherit;
+    margin: auto;
+    width: 380px;
+    margin-top: 0.6cm;
+    background-color: white;
+    padding: 1px;
+}   
+.aboutme {
     text-align: center;
-    top: -1.1cm;
-}
-.detail .text1 {
+    font-size: 36px;
+    padding: 20px;
     font-family: monospace;
-    font-size: 22px;
-    position: relative;
-    color: #f4f4f5;
-    filter: opacity(100%);
-    display: block;
+}
+.projects {
     text-align: center;
-    top: -2cm;
+    font-size: 36px;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.icons {
+.github {
+    display: block;
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 1px solid white;
+    border-radius: 80px;
+    transition: ease;
+    transition-duration: 0.3s;
+}
+.github:hover {
+    box-shadow: 0px 12px 15px 0px rgba(255, 255, 255, 0.514);
+}
+.github-box {
     position: relative;
-    display: inline;
-    top: -2.4cm;
-    left: 41.8%;
-    right: 40%;
-    width: 3.6%;
-
-    transition: top 0.1s, box-shadow 0.1s ease-in;
+    top: -0.7cm;
 }
-.icons:hover {
+.skills, p {
+    display:inline;
+    text-align: center;
     position: relative;
-    top: -2.5;
-    box-shadow: 0px 10px 10px black;
+    font-size: 32px;
+    margin-right: 20px;
+    top: -0.3cm;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-@media screen and (max-width:750px) {
-    body, html {
-        padding: 7px;
-        height: 100%;
-    }
-    .fronted {
-        width: auto;   
-    }
-    .pp {
-        width: 35%;
-    }
-    .detail .text {
-        font-size: 38px;
-    }
-    .detail .text1 {
-        font-size: 20px;
-    }
-    .icons {
-        left: 36.2%;
-        right: 40%;
-        width: 6%;
-    }
-
+.box {
+    display: block;
+    width: 36%;
+    border: 0.5px ridge white;
+    position: relative;
+    top: -0.3cm;
+    margin: auto;
+    border-radius: 10px;
 }
-
-@media screen and (min-width:1280px) {
-    body ,html {
-        padding: 0px;
-        height: auto;
-    }
-    .fronted {
-        top: -2cm;
-        width: 50%;   
-    }
-    .pp {
-        top: -2cm;
-    }
-    .detail .text {
-        top: -3cm;
-    }
-    .detail .text1 {
-        font-size: 20px;
-        top: -4.2cm;
-    }
-    .icons {
-        top: -4.5cm;
-        width: 3.2%;
-        left: 43%;
-    }
+.skill1-in {
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    width: 0%;
+    height: 20px;
+    animation-name: skill1;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+.skill2-in {
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    width: 0%;
+    height: 20px;
+    animation-name: skill2;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+.skill3-in {
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    width: 0%;
+    height: 20px;
+    animation-name: skill3;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+.skill4-in {
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    width: 0%;
+    height: 20px;
+    animation-name: skill4;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+@keyframes skill1 {
+    10% {width: 0%;} 
+    50% {width: 100%;}
+    100% {width: 100%;}
+}
+@keyframes skill2 {
+    10% {width: 0%;} 
+    50% {width: 70%;}
+    100% {width: 70%;}
+}
+@keyframes skill3 {
+    10% {width: 0%;} 
+    50% {width: 90%;}
+    100% {width: 90%;}
+}
+@keyframes skill4 {
+    10% {width: 0%;} 
+    50% {width: 10%;}
+    100% {width: 10%;}
 }
