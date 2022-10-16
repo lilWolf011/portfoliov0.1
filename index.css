@@ -1,185 +1,234 @@
 html, body {
-    height: 100%;
+    background-color: #151515;
+    margin-left: 20px;
+    margin-right: 20px;
     scroll-behavior: smooth;
-    background-color: #140022;
+    line-height: 1.15;
 }
-
-#toggleBtn {
-    border-radius: 10px 0px 0px 10px;
-    border: solid 1px #6E00B5;
-    background-color: transparent;
-    margin: 7px;
-    position: fixed;
-    z-index: 9998;
+* {
     box-sizing: border-box;
 }
-#toggleBtn:hover {
-    filter: grayscale(20%);
+.container {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
 }
-#content {
-    margin-left: 70px;
-    opacity: 0;
-    visibility: hidden;
-    position: fixed;
-    top: 50px;
-    transition: 250ms all;
+/*NAVBAR KISMI*/
+.navbar {
+    background-color: #151516;
+    width: 100%;
+    margin-left: -50px;
+    margin-right: -50px;
 }
 ul {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
     list-style-type: none;
-    font-size: 18px;
-    border: solid 1px #6E00B5;
-    background-color: transparent;
-    padding: 8px;
-    border-radius: 0px 10px 10px 10px;
+}
+ul a {
+    text-decoration: none;
+    color: #FCFCFC;
+}
+li a {
+    padding: 10px;
 }
 li a:hover {
-    color: rgba(255, 255, 255, 0.582);
+    background-color: #232323;
 }
-#content.active {
-    top: 0;
-    opacity: 1;
-    visibility: visible;
-}
-a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.822);
-}
-
-
+/*MENÜ KISMI*/
 .pp {
+    position:absolute;
+    padding: 7px;
+    border: 2px solid #FFE367;
+    width: 265px;
     border-radius: 50%;
+    margin-left: 610px;
+    margin-top: -20px;
     object-fit: cover;
-    display: block;
-    position: inherit;
-    margin: auto;
-    width: 380px;
-    margin-top: 0.6cm;
-    background-color: black;
-    padding: 1px;
-}   
-.aboutme {
-    text-align: center;
-    font-size: 36px;
-    padding: 20px;
-    color: rgba(255, 255, 255, 0.856);
-    font-family: monospace;
 }
+.home {
+    color: white;
+}
+.home .p1 {
+    color: #FFFFFF;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 48px;
+}
+.home .p2 {
+    color: #ffffffd7;
+    font-size: 25px;
+    font-family: 'Caveat', cursive;
+    margin-top: -42px;
+}
+.home .p3 {
+    font-family: 'Indie Flower', cursive;
+    color: #999999;
+    font-size: 24px;
+}
+/*What I Do KISMI*/
+.whatıdo .p1 {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 46px;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+.whatıdo .box {
+    background-color: transparent;
+    box-shadow: 0px 10px 30px 10px black;
+    width: 100%;
+    height: 273px;
+}
+.whatıdo .box-in {
+    font-family: 'Indie Flower', cursive;
+    padding: 40px;
+    font-size: 20px;
+    color: #999999
+}
+.whatıdo .box-in-in {
+    color: #eeeeee;
+}
+/*About Me KISMI*/
+.aboutme .p1 {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 46px;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+.aboutme .p2 {
+    color: #C1C1C1;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+}
+/*Contact Me KISMI*/
+.contactme .p1 {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 46px;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+.contactme .p2 {
+    color: #C1C1C1;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 22px;
+    text-align: center;
+}
+.contactme .icons {
+    position: relative;
+    display: flex;
+}
+.fa {
+    display: flex;
+    padding: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 30px 30px 30px 30px;
+    margin-left: 20px;
+}
+.icons .fa:hover {
+      opacity: 0.7;
+}
+.icons .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.icons .fa-instagram {
+    background: #125688;
+    color: white;
+}
+.icons .fa-github {
+    background: #0D1117;
+    color: white;
+}
+.icons .fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+/*Projects KISMI*/
 .projects {
+    display: flex;
+    gap: 100px;
+}
+.projects a {
+    text-decoration: none;
+}
+#projects .p1 {
+    color: #FFFFFF;
     text-align: center;
-    font-size: 36px;
-    padding: 20px;
-    color: rgba(255, 255, 255, 0.856);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 46px;
+    font-family: 'Fuzzy Bubbles', cursive;
 }
-.github {
-    display: block;
-    margin-left: 28%;
-    margin-right: 28%;
-    border: 1px solid white;
-    border-radius: 80px;
-    transition: ease;
-    transition-duration: 0.3s;
+.projects .fa-github {
+    color: white;
 }
-.github:hover {
-    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.61);
+.projects .box1 {
+    background-color: #232323;
+    width: 400px;
+    height: 230px;
+    border-radius: 10px 10px 10px 10px;
 }
-.github-box {
-    position: relative;
-    top: -0.7cm;
+.projects .p2 {
+    font-size: 22px;
+    text-align: left;
+    margin-top: -10px;
+    margin-left: 38px;
+    color: white;
 }
-.skills, p {
-    display:inline;
-    text-align: center;
-    position: relative;
-    color: rgba(255, 255, 255, 0.808);
-    font-size: 32px;
-    margin-right: 20px;
-    top: -0.3cm;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.projects .p3 {
+    font-size: 18px;
+    text-align: left;
+    margin-top: -10px;
+    margin-left: 36px;
+    color: white
 }
-.box {
-    display: block;
-    width: 40%;
-    border: 0.5px ridge rgb(255, 255, 255);
-    position: relative;
-    top: -0.3cm;
-    margin: auto;
-    border-radius: 10px;
+.projects button {
+    background-color: #FFE367;
+    border: 1px solid #FFE367;
+    padding: 8px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 280px;
+    transition: 0.3s ease;
 }
-.skillstext {
-    text-align: center;
-    font-size: 36px;
-    padding: 20px;
-    color: rgba(255, 255, 255, 0.856);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.skill1-in {
-    background-color: rgb(192, 150, 72);
-    border-radius: 10px;
-    width: 0%;
-    height: 20px;
-    animation-fill-mode: forwards;
-    animation-name: skill1;
-    animation-duration: 6s;
-    animation-timing-function: ease;
-}
-.skill2-in {
-    background-color: rgb(55, 158, 199);
-    border-radius: 10px;
-    width: 0%;
-    height: 20px;
-    animation-fill-mode: forwards;
-    animation-name: skill2;
-    animation-duration: 6s;
-    animation-timing-function: ease;
-}
-.skill3-in {
-    background-color: rgb(81, 81, 160);
-    border-radius: 10px;
-    width: 0%;
-    height: 20px;
-    animation-fill-mode: forwards;
-    animation-name: skill3;
-    animation-duration: 6s;
-    animation-timing-function: ease;
-}
-.skill4-in {
-    background-color: rgb(221, 218, 53);
-    border-radius: 10px;
-    width: 0%;
-    height: 20px;
-    animation-fill-mode: forwards;
-    animation-name: skill4;
-    animation-duration: 6s;
-    animation-timing-function: ease;
-}
-@keyframes skill1 {
-    10% {width: 0%;} 
-    50% {width: 100%;}
-    100% {width: 100%;}
-}
-@keyframes skill2 {
-    10% {width: 0%;} 
-    50% {width: 70%;}
-    100% {width: 70%;}
-}
-@keyframes skill3 {
-    10% {width: 0%;} 
-    50% {width: 90%;}
-    100% {width: 90%;}
-}
-@keyframes skill4 {
-    10% {width: 0%;} 
-    50% {width: 10%;}
-    100% {width: 10%;}
+.projects button:hover {
+    margin-top: -2px
 }
 
-@media only screen and (max-width: 725px) {
-    .github {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    .box {
-        width: 70%;
-    }
+.altnavbar-draw {
+    background-color: #3F3F3F;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 6px
 }
+.altnavbar-about ul {
+    padding-top: 10px;
+}
+.altnavbar-about .lilwolf {
+    color: rgb(151, 151, 151);
+    margin-top: 20px;
+    margin-left: 400px;
+}
+
+button {
+    display: none;
+    cursor: pointer;
+    position: fixed; 
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    width: 60px;    
+    height: 60px;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: 0px 3px 8px 8px rgb(0, 0, 0);
+    color: white;
+    border: none;
+}
+button:hover {
+    box-shadow: 0px 3px 8px 8px rgb(10, 10, 10);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Caveat&family=Fuzzy+Bubbles:wght@400;700&family=Inconsolata:wght@400;500&family=Indie+Flower&family=Roboto+Mono:wght@200;300;400&family=Roboto:wght@300;400&family=Vollkorn:wght@400;500&display=swap');
