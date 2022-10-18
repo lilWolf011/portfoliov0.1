@@ -53,7 +53,7 @@ li a:hover {
 }
 .home .p1 {
     color: #FFFFFF;
-    font-family: 'Fuzzy Bubbles', cursive;
+    font-family: 'Caveat', cursive;
     font-size: 48px;
 }
 .home .p2 {
@@ -72,7 +72,7 @@ li a:hover {
     color: #FFFFFF;
     text-align: center;
     font-size: 46px;
-    font-family: 'Fuzzy Bubbles', cursive;
+    font-family: 'Caveat', cursive;
 }
 .whatıdo .box {
     background-color: transparent;
@@ -94,7 +94,7 @@ li a:hover {
     color: #FFFFFF;
     text-align: center;
     font-size: 46px;
-    font-family: 'Fuzzy Bubbles', cursive;
+    font-family: 'Caveat', cursive;
 }
 .aboutme .p2 {
     color: #C1C1C1;
@@ -107,13 +107,14 @@ li a:hover {
     color: #FFFFFF;
     text-align: center;
     font-size: 46px;
-    font-family: 'Fuzzy Bubbles', cursive;
+    font-family: 'Caveat', cursive;
 }
 .contactme .p2 {
     color: #C1C1C1;
     padding-left: 50px;
     padding-right: 50px;
     font-size: 22px;
+    font-family: 'Permanent Marker', cursive;
     text-align: center;
 }
 .contactme .icons {
@@ -159,7 +160,7 @@ li a:hover {
     color: #FFFFFF;
     text-align: center;
     font-size: 46px;
-    font-family: 'Fuzzy Bubbles', cursive;
+    font-family: 'Caveat', cursive;
 }
 .projects .fa-github {
     color: white;
@@ -212,26 +213,27 @@ li a:hover {
     margin-left: 400px;
 }
 
-.btn {
+.btn{
     display: none;
     cursor: pointer;
     position: fixed; 
     bottom: 30px;
     right: 40px;
     z-index: 99;
-    width: 50px;    
-    height: 50px;
     border-radius: 20%;
     background-color: #232323;
-    box-shadow: 0px 5px 10px 5px black;
     color: white;
     border: none;
     transition:ease-out;
-    transition-duration: 0.2s;
+    transition-duration: 0.1s;
+}
+.btn img {
+    width: 36px;
 }
 .btn:hover {
     box-shadow: 0px 5px 10px 5px black;
     bottom: 32px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@500;600;700&family=Indie+Flower&family=Kalam:wght@300;400;700&family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Caveat&family=Fuzzy+Bubbles:wght@400;700&family=Inconsolata:wght@400;500&family=Indie+Flower&family=Roboto+Mono:wght@200;300;400&family=Roboto:wght@300;400&family=Vollkorn:wght@400;500&display=swap');
